@@ -1,0 +1,16 @@
+id: 3c23b1d2-1986-4170-ae36-66a76ba4f4e2
+name: roomiq
+description: "AI room analyzer — upload room photos, identify furniture, estimate prices"
+tier: prototype
+lane: side-projects
+priority: medium
+category: vision
+focus: true
+open_tasks: 0
+oss: false
+stack: [typescript, react, convex, vite]
+repo: null
+deploy_url: null
+last_active: 2026-03-02
+tags: []
+notes:
