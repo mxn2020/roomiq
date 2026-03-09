@@ -1,0 +1,12 @@
+services:
+  convex:
+    project: RoomIQ
+  vercel:
+    project: RoomIQ
+  stripe:
+    mode: live
+  nvidia:
+    api: nvidia-nims
+  github:
+    owner: mxn2020
+    repo: roomiq

@@ -20,6 +20,8 @@ import TermsPage from './pages/TermsPage'
 import PrivacyPage from './pages/PrivacyPage'
 import ProfilePage from './pages/ProfilePage'
 import LogsPage from './pages/LogsPage'
+import AnalysisPage from './pages/AnalysisPage'
+import ScanHistoryPage from './pages/ScanHistoryPage'
 
 function App() {
     return (
@@ -37,7 +39,10 @@ function App() {
                         <Route path="/profile" element={<AuthGuard><ProfilePage /></AuthGuard>} />
                         <Route path="/settings" element={<AuthGuard><SettingsPage /></AuthGuard>} />
                         <Route path="/billing" element={<AuthGuard><BillingPage /></AuthGuard>} />
-                        {/* Admin routes — SubscriptionGuard allows admins */}
+                        {/* App-specific routes */}
+                        <Route path="/analyze" element={<AuthGuard><SubscriptionGuard><AnalysisPage /></SubscriptionGuard></AuthGuard>} />
+                        <Route path="/history" element={<AuthGuard><SubscriptionGuard><ScanHistoryPage /></SubscriptionGuard></AuthGuard>} />
+                        {/* Admin routes */}
                         <Route path="/admin" element={<AuthGuard><SubscriptionGuard><AdminPage /></SubscriptionGuard></AuthGuard>} />
                         <Route path="/admin/stripe" element={<AuthGuard><SubscriptionGuard><AdminStripePage /></SubscriptionGuard></AuthGuard>} />
                         <Route path="/audit-logs" element={<AuthGuard><SubscriptionGuard><AuditLogsPage /></SubscriptionGuard></AuthGuard>} />
