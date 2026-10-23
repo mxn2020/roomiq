@@ -53,7 +53,7 @@
   },
   "description": "AI-powered room design assistant with interior visualization",
   "author": "Mehdi Nabhani <mehdi@geenius.app>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/mxn2020/roomiq.git"
